@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil | Whayame</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      overflow-x: hidden;
+    }
+
+    .header {
+      background-color: red;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-arrow {
+      font-size: 24px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .cover {
+      width: 100%;
+      height: 180px;
+      background-image: url('https://raw.githubusercontent.com/sauca300-maker/Whayame-vidios-/main/Screenshot_20251108-154639.jpg'); /* Foto de capa */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      position: absolute;
+      bottom: -60px;
+      left: 20px;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .friends {
+      color: gray;
+      margin-bottom: 15px;
+    }
+
+    .contact-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .social-links div {
+      background-color: red;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+      border: 2px solid white;
+      cursor: pointer;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .description {
+      color: red;
+      background-color: white;
+      padding: 10px;
+      border-left: 4px solid red;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .name {
+        font-size: 20px;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
+      }
+
+      .cover {
+        height: 150px;
+      }
+      .contact-btn {
+        font-size: 14px;
+      }
+
+      .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .social-links div {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="back-arrow" onclick="goBack()"><--</div>
+    <div><strong>Whayame-Vidios</strong></div>
+  </div>
+  
+  
+
+  <div class="cover">
+    <img src="https://raw.githubusercontent.com/sauca300-maker/Whayame-vidios-/main/Screenshot_20251108-154639~2.jpg" class="profile-pic" />
+  </div>
+
+  <div class="profile-info">
+    <div class="name">Sauca Filipe</div>
+    <div class="friends">Whayame criador de sites e aplicativos web</div>
+
+    <button class="contact-btn" onclick="contactCreator()">Falar com o criador</button>
+
+    <div class="social-links">
+      <div onclick="openFacebook()">Faceboo...</div>
+      <div onclick="openTikTok()">TikTok</div>
+      <div onclick="openWhatsApp()">Whats...</div>
+    </div>
+
+  
+
+  <script>
+    function goBack() {
+      
+      window.location.href = "index.html"; 
+      
+    }
+
+    function contactCreator() {
+     
+      
+      
+       window.location.href = "sobre.html"; 
+      
+      
+    }
+
+    function openFacebook() {
+      window.location.href = "https://www.facebook.com/filipesauca.dapausa"; 
+                
+    }
+
+    function openTikTok() {
+     window.location.href = "https://www.tiktok.com/@saucafilip"; 
+          
+    }
+  function openWhatsApp() {
+      window.location.href = "https://wa.me/244928075197?text=Gostei%20muito%20do%20teu%20site!%20Está%20muito%20bonito%20e%20profissional.%20Parabéns!%20Quero%20falar%20contigo.";
+    
+    }
+  </script>
+
+</body>
+</html>
